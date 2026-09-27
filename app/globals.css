@@ -1,0 +1,31 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #12110f; color: #f4efe6; font-family: var(--font-body), sans-serif; }
+a { color: inherit; }
+.page { min-height: 100vh; }
+.bar, .foot { display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 1.5rem; }
+.bar { position: sticky; top: 0; background: rgba(18,17,15,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid #2a2622; z-index: 2; }
+.bar span, .logo { font-family: var(--font-display), serif; font-size: 1.4rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.bar nav, .foot nav { display: flex; gap: 1.1rem; }
+.bar a { text-decoration: none; }
+.bar a:last-child { border: 1px solid #c4a574; color: #c4a574; padding: 0.35rem 0.7rem; }
+.hero { padding: 8vh 1.5rem 3rem; display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 2rem; align-items: end; }
+.hero h1 { font-family: var(--font-display), serif; font-weight: 500; font-size: clamp(4.5rem, 12vw, 8rem); line-height: 0.82; margin: 0; }
+.eyebrow { letter-spacing: 0.18em; text-transform: uppercase; color: #c4a574; font-size: 0.75rem; }
+.aside { border-left: 1px solid #3a332c; padding-left: 1.5rem; }
+.menu, .chairs, .book { padding: 2rem 1.5rem 3rem; max-width: 980px; }
+.row { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px dotted #3a332c; padding: 0.85rem 0; }
+.row b { font-weight: 500; }
+.price { color: #c4a574; }
+.chairs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: none; }
+.chair { min-height: 220px; padding: 1rem; background: #1c1a17; display: flex; flex-direction: column; justify-content: flex-end; }
+.chair strong { font-family: var(--font-display), serif; font-size: 1.8rem; font-weight: 500; }
+.mark { font-family: var(--font-display), serif; font-size: 4rem; color: #c4a574; line-height: 1; }
+.book h1, .menu h2 { font-family: var(--font-display), serif; font-weight: 500; }
+.inquiry-form { display: grid; gap: 0.8rem; max-width: 520px; }
+label { display: grid; gap: 0.3rem; font-size: 0.9rem; }
+input, select, textarea { font: inherit; color: inherit; background: #1c1a17; border: 1px solid #3a332c; padding: 0.75rem; }
+button { font: inherit; background: #c4a574; color: #12110f; border: 0; padding: 0.85rem 1rem; cursor: pointer; }
+.form-success { border: 1px solid #c4a574; padding: 1rem; }
+.foot { border-top: 1px solid #2a2622; color: #b7aa9a; }
+@media (max-width: 800px) { .hero, .chairs { grid-template-columns: 1fr; } .aside { border: 0; padding: 0; } }
