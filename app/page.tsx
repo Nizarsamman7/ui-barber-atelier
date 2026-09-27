@@ -17,15 +17,7 @@ const chairs = [
 
 export default function HomePage() {
   return (
-    <div className="page">
-      <header className="bar">
-        <span>Northline</span>
-        <nav>
-          <a href="#menu">Menu</a>
-          <a href="#chairs">Chairs</a>
-          <Link href="/book">Book</Link>
-        </nav>
-      </header>
+    <>
       <section className="hero">
         <div>
           <p className="eyebrow">Two chairs · Jordaan</p>
@@ -34,6 +26,7 @@ export default function HomePage() {
         <div className="aside">
           <p>Walk-ins until the book fills. Tue–Fri 10–19, Sat 09–17. No franchise script, no upsell card.</p>
           <p>Haarlemmerdijk 18, Amsterdam</p>
+          <p><Link href="/book">Hold a chair</Link> · <Link href="/first-visit">First visit</Link></p>
         </div>
       </section>
       <section className="menu" id="menu">
@@ -44,6 +37,7 @@ export default function HomePage() {
             <span className="price">€{price}</span>
           </div>
         ))}
+        <p><Link href="/menu">Times and the full card</Link></p>
       </section>
       <section className="chairs" id="chairs">
         {chairs.map(([mark, name, text]) => (
@@ -54,10 +48,6 @@ export default function HomePage() {
           </article>
         ))}
       </section>
-      <footer className="foot">
-        <span>Northline Barbers</span>
-        <span>Book online or walk in</span>
-      </footer>
-    </div>
+    </>
   );
 }

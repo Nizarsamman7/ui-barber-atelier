@@ -29,3 +29,18 @@ button { font: inherit; background: #c4a574; color: #12110f; border: 0; padding:
 .form-success { border: 1px solid #c4a574; padding: 1rem; }
 .foot { border-top: 1px solid #2a2622; color: #b7aa9a; }
 @media (max-width: 800px) { .hero, .chairs { grid-template-columns: 1fr; } .aside { border: 0; padding: 0; } }
+
+
+.eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.75rem; }
+.lede { max-width: 42rem; font-size: 1.08rem; }
+.sheet { padding: 2.5rem 1.5rem 4rem; max-width: 980px; margin: 0 auto; }
+.sheet h1 { font-family: var(--font-display), Georgia, serif; font-weight: 500; font-size: clamp(2.2rem, 5vw, 4.2rem); line-height: 0.95; margin: 0.35rem 0 0.8rem; }
+.trio { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.stack { display: grid; gap: 0.75rem; margin: 1.25rem 0; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.45rem 1rem; padding: 0.7rem 1.4rem 0.9rem; }
+.site-nav a { text-decoration: none; }
+.side .site-nav { display: grid; padding: 1.2rem 0 0; gap: 0.4rem; }
+details.panel summary { cursor: pointer; font-weight: 600; }
+.sheet .row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; }
+
+.panel { background: #1c1a17; } .site-nav { border-bottom: 1px solid #2a2622; }
